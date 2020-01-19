@@ -1,0 +1,21 @@
+
+<div style="text-align:center">
+  <h1>Calculator</h1>
+  <div>
+    <label>
+      first operand:
+      <input [(ngModel)]="firstOperand" placeholder="ex: 6"> <br><br>
+      second operand:
+      <input [(ngModel)]="secondOperand" placeholder="ex: 2"> <br><br>
+      <button (click)=getInfo()>click here</button>
+    </label>
+  </div>
+  <br><br>
+  <div *ngIf="buttonClicked">
+
+    addition result is: {{addition?.result}} <br>
+    subtraction result is: {{subtraction?.result}} <br>
+    multiplication result is: {{multiplication?.result}} <br>
+
+  </div>
+</div>
